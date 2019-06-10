@@ -1,0 +1,70 @@
+.character-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.character{
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    margin: 25px;
+    justify-content: space-evenly;
+}
+
+.character-img{
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    height: 200px;
+    width: 200px;
+    color: white;
+}
+
+.character-box{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    background-color: white;
+    padding: 5px;
+}
+.character-legend{
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+}
+
+.character-name h2{
+    font-size: 30px;
+    margin: 15px;
+}
+
+.left{
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    width: 180px;
+}
+
+.left h3{
+    font-size: 16px;
+    line-height: 15px;
+    margin: 3px;
+}
+
+.right{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 200px;
+}
+
+.right h3{
+    font-size: 16px;
+    line-height: 15px;
+    margin: 3px;
+    color: rgb(0, 255, 85);
+}
+
+.hidden{
+    display: none;
+}
