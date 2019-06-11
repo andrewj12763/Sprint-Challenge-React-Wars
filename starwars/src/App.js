@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
 
+import  CharacterList  from './components/CharacterList';
+
 class App extends Component {
   constructor() {
     super();
@@ -28,11 +30,12 @@ class App extends Component {
         throw new Error(err);
       });
   };
-
+ 
   render() {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
+        <CharacterList characters={this.state.starwarsChars} nextPageFunc={this.nextPage} previousPageFunc={this.previousPage} currentPage={this.state.currentPage}/>
       </div>
     );
   }
